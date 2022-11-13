@@ -1,0 +1,9 @@
+package baseball.domain;
+
+public class NumberGenerator {
+    public List<Integer> createRandomNumbers() {
+        return null; //(thing)
+
+    }
+//List : 자바에서 기본으로 제공하는 collection (우리가 필요한 기능을 미리 만들어서 제공해주고있다. 굳이 배열을 쓸 필요가 없다.)
+}

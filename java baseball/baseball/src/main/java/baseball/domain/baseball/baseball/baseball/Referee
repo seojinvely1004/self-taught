@@ -1,0 +1,8 @@
+package baseball.domain;
+
+public class Referee {
+    public String compare(List<Integer> computer, List<Integer> player) {
+        return "3스트라이크";
+    }
+
+}
