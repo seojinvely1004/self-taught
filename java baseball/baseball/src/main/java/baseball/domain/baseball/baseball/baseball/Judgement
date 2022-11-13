@@ -2,10 +2,24 @@ package baseball.domain;
 
 public class Judgement {
     public int correctCount(List<Integer> computer, List<Integer> playuer) {
+        int result = 0; //3. 
+
+        for (int i = 0; i < computer.size(); i++) {//1.컴퓨터에 담겨있는 size만큼 계속 반복한다.
+            int playerNumber = player.get(i);//2.player가 돌면서 computer에게 묻는다. 사용자가 입력한 숫자가 컴퓨터가 갖고 있는지 
+            computer.contains(playerNumber);
+
+            if (computer.contains(playerNumber)) { //갖고있다면 result 
+                result++; //result = result + 1;              
+            }
+            
+            //int computerNumber = player.get(i);//computer의Number를 player가 가지고 있는지 
+            //player.contains(computer.get(i))
+
+        }
         return 0;
     }
 
-    public boolean hasPlace(int placeNumber, int number) {//특정 자리에 특정 숫자가 있는지 
+    public boolean hasPlace(List<Integer> computer, int placeNumber, int number) {//특정 자리에 특정 숫자가 있는지 
         return false;
     }
    

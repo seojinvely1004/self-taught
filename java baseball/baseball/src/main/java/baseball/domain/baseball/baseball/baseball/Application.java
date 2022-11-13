@@ -1,5 +1,7 @@
 package baseball;
 
+import java.util.Arrays;
+
 import baseball.domain.NumberGenerator;
 /*객체 지향 프로그래밍 
 *1. 기능을 가지고 있는 클래스를 인스턴스화(= 객체, object) 한다. 
@@ -9,8 +11,16 @@ import baseball.domain.NumberGenerator;
 
 public class Application {
     public static void main(String[] args) {
-        final NumberGenerator generator = new NumberGenerator();
-        List<Integer> numbers = generator.createRandomNumbers();
-        System.out.println(numbers);   
+        //NumberGenerator generator = new NumberGenerator();
+        //List<Integer> numbers = generator.createRandomNumbers();
+        //System.out.println(numbers);
+        
+         Judgement judgement = new Judgement();
+         final int count = judgement.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3);
+         System.out.println(count);  //3       
+         //judgement.correctCount(Arrays.asList(2, 8, 9), Arrays.asList(1, 2, 3);
+         //System.out.println(count);  //1
+         //judgement.correctCount(Arrays.asList(7, 8, 9), Arrays.asList(1, 2, 3);
+         //System.out.println(count);  //0
     }
 }
