@@ -24,12 +24,20 @@ public class Application {
          //judgement.correctCount(Arrays.asList(7, 8, 9), Arrays.asList(1, 2, 3);
          //System.out.println(count);  //0
 
-         Judgement judgement = new Judgement();
-         final boolean place = judgement.hasPlace(Arrays.List(7, 8, 9), placeIndex:0, number:7); //헷갈린다면 placeNumber+1로해도된다.
-         System.out.println(place);//true
+         //Judgement judgement = new Judgement();
+         //final boolean place = judgement.hasPlace(Arrays.List(7, 8, 9), placeIndex:0, number:7); //헷갈린다면 placeNumber+1로해도된다.
+         //System.out.println(place);//true
          //final boolean place = judgement.hasPlace(Arrays.List(7, 8, 9), placeIndex:1, number:7); 
          //System.out.println(place);//false
          //final boolean place = judgement.hasPlace(Arrays.List(7, 8, 9), placeIndex:1, number:8); 
          //System.out.println(place);//true
+
+         final Refree referee = new Referee();
+         final String result = referee.compare(Array.asList(1, 2, 3), Array.asList(1, 2, 3));//referee야 컴퓨터의 숫자와 나의 숫자가 같은지 compare()해줘~ 
+         System.out.println(result);//0볼 3 스트라이크
+
+         //final String result = referee.compare(Array.asList(3, 1, 2), Array.asList(1, 2, 3));
+         //System.out.println(result);//3볼 0 스트라이크 
+
     }
 }

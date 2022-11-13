@@ -2,7 +2,20 @@ package baseball.domain;
 
 public class Referee {
     public String compare(List<Integer> computer, List<Integer> player) {
-        return "3스트라이크";
+        //몇 개의 숫자가 같은지 알아낸 뒤  =>이 기능은 judgement가 들고있다.얘와 협력한다. 
+        //스트라이크의 개수를 뺀다. 
+        // 남은 수는 볼의 개수이다.
+        Judgement judgement = new Judgement();//judgement로부터 몇개의 숫자가 같은지 물어본다. 협력한다. 
+        int correctCount = judgement.correctCount(computer, player);
+
+        int strike = 0;
+        for (int placeIndex = 0; placeIndex < player.size(); placeIndex++) {//placeIndex
+            if (judgement.hasPlace(computer, placeIndex, player.get(placeIndex))) {//실제 그 자리(placeIndex)에 실제로 갖고있는지. 
+                strike++;
+            }
+        }
+            int ball = correctCount - strike; // 몇개의수가같은지(correctCount)-strike= 남는 수는 볼의 갯수이다. 
+            return ball + " 볼 " + strike + " 스트라이크 ";
+        }
     }
 
-}
