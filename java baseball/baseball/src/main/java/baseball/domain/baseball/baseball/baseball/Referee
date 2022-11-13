@@ -15,6 +15,11 @@ public class Referee {
             }
         }
             int ball = correctCount - strike; // 몇개의수가같은지(correctCount)-strike= 남는 수는 볼의 갯수이다. 
+            
+            if(strike == 0) {
+                return "아웃"; //추가 ) 하나도 맞지 않는다면 아웃
+            }
+            
             return ball + " 볼 " + strike + " 스트라이크 ";
         }
     }
