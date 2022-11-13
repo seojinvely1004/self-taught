@@ -19,8 +19,19 @@ public class Judgement {
         return 0;
     }
 
-    public boolean hasPlace(List<Integer> computer, int placeNumber, int number) {//특정 자리에 특정 숫자가 있는지 
-        return false;
+         //public boolean hasPlace(List<Integer> computer, int placeNumber, int number) {//특정 자리에 특정 숫자가 있는지
+        /* 
+        컴퓨터는 기본적으로 index라는 개념이있다. 0부터 시작~      
+        즉, 컴퓨터는 0부터 숫자를 따진다. 조금 더 명확한 표현을 하기 위해서
+        int placeIndex라고 해주기
+        */
+        public boolean hasPlace(List<Integer> computer, int placeIndex, int number) {//특정 자리에 특정 숫자가 있는지  
+        return computer.get(placeIndex) == number;
+        //
+        //if (computer.get(placeIndex) == number) {
+        //   return true; 같으면 true 다르면  false 이것을 위와같이 한줄로 줄일 수 있다. 
+        //};
+        //return false;
     }
    
 }
