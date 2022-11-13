@@ -1,7 +1,12 @@
 package baseball.domain;
 
 public class Calculator {
-    /*=====클래스 변수===== */
+    /*=====상수 =====클래스 변수인데 변하지 않는 값> final */
+    public static final int shareBirthDay = 1004; //공유는 하지만 변해서는 안된다 (불변변수)
+    //이것을 변하지 않게 하는 방법은 ? 
+    //final !! 
+
+    /*=====클래스 변수===== > static*/
     public static int shareResult = 0; //static <-> dynamic : 족족 복사해가겠다.
     //모든 인스턴스가 함께 공유 할 수 있는변수 shareResult (복사가 되는 것이 아님)
 
@@ -14,7 +19,7 @@ public class Calculator {
     public Calculator() {
 
     }
-
+    /*=====메서드=====*/
     public int add(int number1, int number2) {
         result = number1 + number2; //add라는 범위 안에서만. 이 기능이 끝나면 사라진다. 
         //이것을 밖에서도 사용하게 하기 위해서

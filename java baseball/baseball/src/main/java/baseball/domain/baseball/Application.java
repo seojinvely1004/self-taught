@@ -20,7 +20,7 @@ public class Application {
         //System.out.println(teacher.shareResult);//2021
         System.out.println(Calculator.shareResult);//2021
 
-        //t도 c도 add라는 기능을 제공하지만 복사본은 그 값(result = 0;)을 복사해오는 것이지 같이 공유는 하지 않는다. 
+        System.out.println(Calculator.SHARE_BIRTHDAY);
     }
     
 }
