@@ -3,10 +3,11 @@ package com.in28minutes.firstjavaproject;
 public class MultiplicationTable {
 
 	void print() {
-		print();
-		for (int i = 1; i <= 10; i++) {
-			System.out.printf("%d * %d = %d", 5, i, 5 * i).println();
-		}
+		print(5);
+		/*
+		 * for (int i = 1; i <= 10; i++) { System.out.printf("%d * %d = %d", 5, i, 5 *
+		 * i).println(); }
+		 */
 
 	}
 	void print(int table) {
