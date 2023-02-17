@@ -10,11 +10,11 @@ public class MotorBikeRunner {
 		honda.start();
 
 		// MotorBike.speed; ERROR)인스턴스변수는 개체로부터 참조될 수 없다
-		ducati.speed = 100;
-		honda.speed = 80;
+		ducati.setSpeed(100);
+		honda.setSpeed(80);
 
-		ducati.speed = 20;
-		honda.speed = 0;
+		ducati.setSpeed(20);
+		honda.setSpeed(0);
 
 	}
 
