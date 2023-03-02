@@ -15,7 +15,6 @@ public class MotorBikeRunner {
 
 		ducati.setSpeed(20);
 		honda.setSpeed(0);
-
 	}
 
 }
